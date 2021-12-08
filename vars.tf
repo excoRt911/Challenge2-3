@@ -15,11 +15,6 @@ variable "ecs_auto_scale_role_name" {
   default = "myEcsAutoScaleRole"
 }
 
-variable "az_count" {
-  description = "Number of AZs to cover in a given region"
-  default     = "2"
-}
-
 variable "app_image" {
   description = "Docker image to run in the ECS cluster"
   default     = "753392824297.dkr.ecr.us-east-1.amazonaws.com/daniel.b:latest"
